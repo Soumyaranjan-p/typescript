@@ -30,5 +30,12 @@ function abcd(obj:User){
 
  abcd({name:"hey",email:"gey@gmail.com", password:"123"})
 
- //---TYPE - ALIASES
+ ---TYPE - ALIASES
+ 
+ type arg= string | null;
+ function abcd(obj:arg){
+
+ }
+ abcd()
+
  
