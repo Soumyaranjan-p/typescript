@@ -6,5 +6,8 @@ abcd({ name: "hey", email: "gey@gmail.com", password: "123" });
 function abcd(obj) {
 }
 abcd({ name: "hey", email: "gey@gmail.com", password: "123" });
-//---TYPE - ALIASES
+-- - TYPE - ALIASES;
+function abcd(obj) {
+}
+abcd();
 //# sourceMappingURL=app.js.map
