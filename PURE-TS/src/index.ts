@@ -2,7 +2,9 @@
 
 
 
-
+class User{
+    
+}
 
 
 
