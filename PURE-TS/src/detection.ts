@@ -56,7 +56,7 @@ function logValue(x: Date | string) {
 
 type Fish = {swim: () => void};
 type Bird = {fly: () => void};
-
+ //USING  TYPE PREDICATES -- BEST WAY TO LEARN THINGS
 function isFish(pet: Fish | Bird): pet is Fish{
     return (pet as Fish).swim !== undefined
 }
@@ -71,7 +71,10 @@ function getFood(pet: Fish | Bird){
     }
 }
 
-
+//  The 
+// NEVER
+//  type
+// When narrowing, you can reduce the options of a union to a point where you have removed all possibilities and have nothing left. In those cases, TypeScript will use a never type to represent a state which shouldn’t exist.
 interface Circle {
     kind: "circle",
     radius: number
@@ -112,4 +115,32 @@ function getArea(shape: Shape){
             const _defaultforshape: never = shape
             return _defaultforshape
     }
+
+
+}
+
+
+
+
+
+interface Triangle {
+  kind: "triangle";
+  sideLength: number;
+}
+
+// Exhaustiveness checking
+ 
+type Shape = Circle | Square | Triangle;
+ 
+function getArea(shape: Shape) {
+  switch (shape.kind) {
+    case "circle":
+      return Math.PI * shape.radius ** 2;
+    case "square":
+      return shape.sideLength ** 2;
+    default:
+      const _exhaustiveCheck: never = shape;
+Type 'Triangle' is not assignable to type 'never'.
+      return _exhaustiveCheck;
+  }
 }
