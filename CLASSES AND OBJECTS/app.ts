@@ -55,3 +55,18 @@ console.log(`${pt.x}, ${pt.y}`);
 //     this._size = num;
 //   }
 // }
+
+// RELATION BETWEEN CLASSES 
+
+   class Point1 {
+  x = 0;
+  y = 0;
+}
+ 
+class Point2 {
+  x = 0;
+  y = 0;
+}
+ 
+// OK
+const p: Point1 = new Point2();
