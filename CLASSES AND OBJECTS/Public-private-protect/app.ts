@@ -66,3 +66,23 @@ d.bark();         // works
 d.sound;          // ❌ Error (cannot access outside class)
 
 
+//    Readonly
+// ✔ Value can be assigned only once
+
+// ✔ Can be public, private, or protected
+// ✔ Cannot be changed after initialization
+
+
+class Student {
+  readonly id: number;
+  name: string;
+
+  constructor(id: number, name: string) {
+    this.id = id;      // allowed
+    this.name = name;
+  }
+}
+
+const s = new Student(101, "Saroj");
+console.log(s.id);  // 101
+s.id = 200;         // ❌ Error: Cannot assign to readonly property
