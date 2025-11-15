@@ -8,3 +8,5 @@ class Payment{
     }
 
 }
+
+//THIS IS ENOUGH FOR ABSTACT CLASSES
