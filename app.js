@@ -2,6 +2,9 @@
 // const greet = (name: string): string => {
 //   return `Hello, ${name}!`;
 // };
+
+
+
 Object.defineProperty(exports, "__esModule", { value: true });
 // console.log(greet("Soumya"));
 //BASIC TYPES
