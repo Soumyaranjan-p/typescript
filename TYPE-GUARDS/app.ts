@@ -42,6 +42,7 @@ function identify(person: User | Admin) {
     console.log("Admin:", person.role);
   } else {
     console.log("User:", person.name);
+    console.log("User:", person.name);
   }
 }
 
