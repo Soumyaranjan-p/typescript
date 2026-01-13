@@ -1,5 +1,4 @@
 // TYPE SCRIPT ------BENEFITS
-
 //-----------Web development
 //-----------Server-side development:
 //----------Mobile development
